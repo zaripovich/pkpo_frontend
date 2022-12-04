@@ -1,0 +1,31 @@
+.csgo__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+
+.csgo__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.csgo__navbar-links_logo{
+  margin-right: 2rem;
+}
+
+.csgo__navbar-links_container{
+  display: flex;
+  flex-direction: row;
+}
+
+.csgo__navbar-links_container p,
+.csgo__navbar-menu_container p {
+  color: white;
+  font-family: var(--font-family);
+}
+
+
+
