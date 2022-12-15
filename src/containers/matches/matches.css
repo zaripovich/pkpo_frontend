@@ -1,0 +1,17 @@
+
+
+
+.csgo__matches_block{
+  display: block;
+  justify-content: space-around;
+
+
+}
+
+.csgo__matches_pagination{
+  position: relative;
+  margin-top: 2rem;
+  justify-content: center;
+  margin-left: 45%;
+  /*align: center;*/
+}

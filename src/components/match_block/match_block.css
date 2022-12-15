@@ -1,0 +1,66 @@
+
+
+.csgo__match_block{
+  border-radius: 5px;
+  height: 40px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  position: relative;
+  font-family: var(--font-family);
+  background:radial-gradient(circle at 100% 49%, #2F9B92 0%, #18306C 48%);
+}
+
+
+.csgo__match_date{
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: capitalize;
+  
+}
+ 
+.csgo__match_result{
+  position: relative;
+  left: 350px;
+}
+
+
+.csgo__match_teams_name{
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  color:cornsilk;
+}
+
+.csgo__match_score{
+  margin: 1rem;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.csgo__match_teams_name text,
+.csgo__match_date,
+.csgo__match_score text{
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+.csgo__match_winner{
+  color: green;
+}
+
+.csgo__match_loser{
+  color: red;
+}
+
+.csgo__match_draw{
+  color:beige;
+}

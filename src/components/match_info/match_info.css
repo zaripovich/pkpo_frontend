@@ -1,0 +1,46 @@
+
+
+.csgo__match_info_block{
+  position: relative;
+  margin-top: 1rem;
+}
+
+.csgo__match_info_table{
+  position: relative;
+  margin-top: 2rem;
+}
+
+.csgo__match_del{
+  position: relative;
+  margin:1rem;
+}
+
+.csgo__match_info_t1{
+  width: 25%;
+  position: relative;
+  margin-right: 1rem;
+}
+
+.csgo__match_info_t2{
+  width: 25%;
+  position: relative;
+  margin-left:  1rem;
+}
+
+.csgo__match_info_score{
+  position: relative;
+  margin-left:1rem;
+  margin-right:1rem;
+}
+
+.csgo__match_winner{
+  color: green;
+}
+
+.csgo__match_loser{
+  color: red;
+}
+
+.csgo__match_draw{
+  color:beige;
+}

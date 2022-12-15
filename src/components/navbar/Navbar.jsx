@@ -1,5 +1,4 @@
 import React from "react";
-import { RiMenu3Line, RiCloseLin } from 'react-icons/ri';
 import './navbar.css';
 import logo from '../../assets/logo.png';
 const Navbar = () => {
@@ -10,8 +9,9 @@ const Navbar = () => {
           <img src={logo} alt="logo"/>
         </div>
         <div className="csgo__navbar-links_container">
-          <p><a href="#home">Home</a></p>
-          <p><a href="#aboutus">About Us</a></p>
+          <p><a href="/home">Home</a></p>
+          <p><a href="/matches">Matches</a></p>
+          <p><a href="/aboutus">About Us</a></p>
         </div>
       </div>
     </div>
