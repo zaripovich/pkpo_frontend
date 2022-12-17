@@ -34,7 +34,7 @@
 }
 
 .csgo__match_winner{
-  color: green;
+  color: rgb(11, 252, 3);
 }
 
 .csgo__match_loser{
@@ -43,4 +43,9 @@
 
 .csgo__match_draw{
   color:beige;
+}
+
+.csgo__table {
+  font-family: var(--font-family);
+  background: #040C18;
 }

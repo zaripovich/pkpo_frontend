@@ -9,14 +9,14 @@ import "./match_info.css";
 function getTable(rows,team) {
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 400 }} size="small" aria-label="a dense table">
+      <Table sx={{ minWidth: 400}} size="small" aria-label="a dense table" className="csgo__table">
         <TableHead>
           <TableRow>
-            <TableCell width="350" align="center">{team}</TableCell>
-            <TableCell align="right">rating</TableCell>
-            <TableCell align="right">impact</TableCell>
-            <TableCell align="right">kdr</TableCell>
-            <TableCell align="right">dmr</TableCell>
+            <TableCell sx={{ borderBottom: "none",color:"#D4D4DC",fontSize:"1.25rem",fontFamily:"Russo One"}} width="350" align="center">{team}</TableCell>
+            <TableCell sx={{ borderBottom: "none",color:"#D4D4DC",fontSize:"1.25rem",fontFamily:"Russo One"}} align="right">rating</TableCell>
+            <TableCell sx={{ borderBottom: "none",color:"#D4D4DC",fontSize:"1.25rem",fontFamily:"Russo One"}} align="right">impact</TableCell>
+            <TableCell sx={{ borderBottom: "none",color:"#D4D4DC",fontSize:"1.25rem",fontFamily:"Russo One"}} align="right">kdr</TableCell>
+            <TableCell sx={{ borderBottom: "none",color:"#D4D4DC",fontSize:"1.25rem",fontFamily:"Russo One"}} align="right">dmr</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -25,13 +25,13 @@ function getTable(rows,team) {
               key={row.number}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell component="th" scope="row">
+              <TableCell sx={{ borderBottom: "none",color:"#D4D4DC",fontSize:"1.25rem",fontFamily:"Russo One"}} component="th" scope="row">
                 {row.number}
               </TableCell>
-              <TableCell align="right">{row.rating}</TableCell>
-              <TableCell align="right">{row.impact}</TableCell>
-              <TableCell align="right">{row.kdr}</TableCell>
-              <TableCell align="right">{row.dmr}</TableCell>
+              <TableCell sx={{ borderBottom: "none",color:"#D4D4DC",fontSize:"1.25rem",fontFamily:"Russo One"}} align="right">{row.rating}</TableCell>
+              <TableCell sx={{ borderBottom: "none",color:"#D4D4DC",fontSize:"1.25rem",fontFamily:"Russo One"}} align="right">{row.impact}</TableCell>
+              <TableCell sx={{ borderBottom: "none",color:"#D4D4DC",fontSize:"1.25rem",fontFamily:"Russo One"}} align="right">{row.kdr}</TableCell>
+              <TableCell sx={{ borderBottom: "none",color:"#D4D4DC",fontSize:"1.25rem",fontFamily:"Russo One"}} align="right">{row.dmr}</TableCell>
             </TableRow>
           ))}
         </TableBody>

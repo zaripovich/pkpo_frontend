@@ -49,26 +49,26 @@ const MultipleSelectChip = (teams,teamsForSort,setTeamsForSort) => {
     }
   };
   return (
-    <FormControl sx={{ m: 1, width: 300 }}>
-      <InputLabel id="demo-multiple-chip-label">Teams For Sort</InputLabel>
-      <Select
+    <FormControl sx={{ m: 1, width: 300}}>
+      <InputLabel sx={{color:"#D4D4DC",fontSize:"1.25rem",fontFamily:"Russo One"}} id="demo-multiple-chip-label">Teams For Sort</InputLabel>
+      <Select 
         labelId="demo-multiple-chip-label"
         id="demo-multiple-chip"
         multiple
         value={teamsForSort}
         onChange={handleChange}
-        input={<OutlinedInput id="select-multiple-chip" label="Chip" />}
+        input={<OutlinedInput sx={{fontSize:"1.25rem",fontFamily:"Russo One"}} id="select-multiple-chip" label="Chip" />}
         renderValue={(selected) => (
-          <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
+          <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5,fontSize:"1.25rem",fontFamily:"Russo One"}}>
             {selected.map((value) => (
-              <Chip key={value} label={value} />
+              <Chip  sx={{fontSize:"1.25rem",fontFamily:"Russo One"}} key={value} label={value} />
             ))}
           </Box>
         )}
         MenuProps={MenuProps}
       >
         {teams.map((team) => (
-          <MenuItem
+          <MenuItem sx={{color:"#D4D4DC",fontSize:"1.25rem",fontFamily:"Russo One"}}
             key={team}
             value={team}
             style={getStyles(team, teamsForSort, theme)}
@@ -141,16 +141,16 @@ const Matches = () => {
       <div align="center">
         <FormControl size="medium">
           <InputLabel id="demo-simple-select-label">Type Of Sort</InputLabel>
-          <Select
+          <Select sx={{color:"#D4D4DC",fontSize:"1.25rem",fontFamily:"Russo One"}}
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             value={sortType}
             label="Type Of Sort"
             onChange={sT}
           >
-            <MenuItem value={SortTypes.ByDate}>Sort By Date</MenuItem>
-            <MenuItem value={SortTypes.ByTeam}>Sort By Team</MenuItem>
-            <MenuItem value={SortTypes.ById}>Sort By Id</MenuItem>
+            <MenuItem sx={{color:"#D4D4DC",fontSize:"1.25rem",fontFamily:"Russo One"}} value={SortTypes.ByDate}>Sort By Date</MenuItem>
+            <MenuItem sx={{color:"#D4D4DC",fontSize:"1.25rem",fontFamily:"Russo One"}} value={SortTypes.ByTeam}>Sort By Team</MenuItem>
+            <MenuItem sx={{color:"#D4D4DC",fontSize:"1.25rem",fontFamily:"Russo One"}} value={SortTypes.ById}>Sort By Id</MenuItem>
           </Select>
         </FormControl>
       </div>
@@ -158,9 +158,9 @@ const Matches = () => {
         {MultipleSelectChip(teams,teamsForSort,setTeamsForSort)}
       </div>
       <div align="center">
-        <FormControlLabel 
+        <FormControlLabel sx={{color:"#D4D4DC",fontSize:"1.25rem",fontFamily:"Russo One"}}
         control=
-          {<Switch
+          {<Switch 
             checked={bothTeam}
             onChange={handleChange}
             inputProps={{ 'aria-label': 'controlled' }}

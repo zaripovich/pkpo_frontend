@@ -7,6 +7,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 0.5rem;
+  padding-top:10px;
   position: relative;
   font-family: var(--font-family);
   background:radial-gradient(circle at 100% 49%, #2F9B92 0%, #18306C 48%);
@@ -16,6 +17,7 @@
 .csgo__match_date{
   position: relative;
   font-weight: 400;
+  margin-left: 2rem;
   font-size: 16px;
   line-height: 25px;
   text-transform: capitalize;
@@ -54,7 +56,7 @@
 
 
 .csgo__match_winner{
-  color: green;
+  color: rgb(11, 252, 3);
 }
 
 .csgo__match_loser{

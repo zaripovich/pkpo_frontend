@@ -9,6 +9,14 @@ body {
   background: var(--color-bg);
 }
 
+text {
+  color: white;
+}
+
+h1{
+  color: white;
+}
+
 a {
   color: unset;
   text-decoration: none;
