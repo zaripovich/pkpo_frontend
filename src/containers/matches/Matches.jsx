@@ -59,9 +59,9 @@ const MultipleSelectChip = (teams,teamsForSort,setTeamsForSort) => {
         onChange={handleChange}
         input={<OutlinedInput sx={{fontSize:"1.25rem",fontFamily:"Russo One"}} id="select-multiple-chip" label="Chip" />}
         renderValue={(selected) => (
-          <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5,fontSize:"1.25rem",fontFamily:"Russo One"}}>
+          <Box sx={{background:"#040C18",display: 'flex', flexWrap: 'wrap', gap: 0.5,fontSize:"1.25rem",fontFamily:"Russo One"}}>
             {selected.map((value) => (
-              <Chip  sx={{fontSize:"1.25rem",fontFamily:"Russo One"}} key={value} label={value} />
+              <Chip  sx={{color:"#fff",fontSize:"1.25rem",fontFamily:"Russo One"}} key={value} label={value} />
             ))}
           </Box>
         )}
